@@ -9,6 +9,8 @@ class ContactInformationsController < ApplicationController
 
   # GET /contact_informations/1 or /contact_informations/1.json
   def show
+    @contact_information = ContactInformation.where(leader_id: params[:leader_id]).first_or_create
+    render layout: "leader"
   end
 
   # GET /contact_informations/new

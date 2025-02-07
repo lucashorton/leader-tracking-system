@@ -4,6 +4,11 @@
 
 <h1>Contact information</h1>
 
-<div id="contact_informations">
+<div class="columns">
+<div class="column">
+<%= render "application/sidebar", leader:@leader %>
+</div>
+<div class="column is-three-quarters">
     <%= render @contact_information %>
+</div>
 </div>
