@@ -1,0 +1,43 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  leader: one
+  physical_street_address1: MyString
+  physical_street_address2: MyString
+  physical_street_address3: MyString
+  physical_city: MyString
+  physical_state: MyString
+  physical_zip: MyString
+  physical_country: MyString
+  permanent_street_address1: MyString
+  permanent_street_address2: MyString
+  permanent_street_address3: MyString
+  permanent_city: MyString
+  permanent_state: MyString
+  permanent_zip: MyString
+  permanent_country: MyString
+  email: MyString
+  phone: MyString
+  phone_type: MyString
+  alternate_phone: MyString
+
+two:
+  leader: two
+  physical_street_address1: MyString
+  physical_street_address2: MyString
+  physical_street_address3: MyString
+  physical_city: MyString
+  physical_state: MyString
+  physical_zip: MyString
+  physical_country: MyString
+  permanent_street_address1: MyString
+  permanent_street_address2: MyString
+  permanent_street_address3: MyString
+  permanent_city: MyString
+  permanent_state: MyString
+  permanent_zip: MyString
+  permanent_country: MyString
+  email: MyString
+  phone: MyString
+  phone_type: MyString
+  alternate_phone: MyString

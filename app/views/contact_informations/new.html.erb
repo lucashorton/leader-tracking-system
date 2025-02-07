@@ -1,0 +1,11 @@
+<% content_for :title, "New contact information" %>
+
+<h1>New contact information</h1>
+
+<%= render "form", contact_information: @contact_information %>
+
+<br>
+
+<div>
+  <%= link_to "Back to contact information", leader_contact_informations_path %>
+</div>

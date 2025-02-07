@@ -1,0 +1,2 @@
+json.extract! contact_information, :id, :leader_id, :physical_street_address1, :physical_street_address2, :physical_street_address3, :physical_city, :physical_state, :physical_zip, :physical_country, :permanent_street_address1, :permanent_street_address2, :permanent_street_address3, :permanent_city, :permanent_state, :permanent_zip, :permanent_country, :email, :phone, :phone_type, :alternate_phone, :created_at, :updated_at
+json.url contact_information_url(contact_information, format: :json)

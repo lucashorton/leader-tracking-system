@@ -1,0 +1,57 @@
+<%= form_with(model: leader) do |form| %>
+  <% if leader.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(leader.errors.count, "error") %> prohibited this leader from being saved:</h2>
+
+      <ul>
+        <% leader.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :first_name, style: "display: block" %>
+    <%= form.text_field :first_name %>
+  </div>
+
+  <div>
+    <%= form.label :middle_name, style: "display: block" %>
+    <%= form.text_field :middle_name %>
+  </div>
+
+  <div>
+    <%= form.label :last_name, style: "display: block" %>
+    <%= form.text_field :last_name %>
+  </div>
+
+  <div>
+    <%= form.label :suffix, style: "display: block" %>
+    <%= form.text_field :suffix %>
+  </div>
+
+  <div>
+    <%= form.label :preferred_name, style: "display: block" %>
+    <%= form.text_field :preferred_name %>
+  </div>
+
+  <div>
+    <%= form.label :other_names, style: "display: block" %>
+    <%= form.text_field :other_names %>
+  </div>
+
+  <div>
+    <%= form.label :pronouns, style: "display: block" %>
+    <%= form.text_field :pronouns %>
+  </div>
+
+  <div>
+    <%= form.label :self_identified_gender, style: "display: block" %>
+    <%= form.text_field :self_identified_gender %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
