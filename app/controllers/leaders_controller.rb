@@ -8,7 +8,6 @@ class LeadersController < ApplicationController
 
   # GET /leaders/1 or /leaders/1.json
   def show
-    render layout: "leader"
   end
 
   # GET /leaders/new

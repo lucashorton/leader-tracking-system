@@ -1,0 +1,83 @@
+<%= form_with(model: [@leader, demographic]) do |form| %>
+  <% if demographic.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(demographic.errors.count, "error") %> prohibited this demographic from being saved:</h2>
+      <ul>
+        <% demographic.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div>
+    <%= form.label :leader_id, style: "display: block" %>
+    <%= form.text_field :leader_id %>
+  </div>
+  <div>
+    <%= form.label :raceAmericanIndian, style: "display: block" %>
+    <%= form.checkbox :raceAmericanIndian %>
+  </div>
+  <div>
+    <%= form.label :raceAsian, style: "display: block" %>
+    <%= form.checkbox :raceAsian %>
+  </div>
+  <div>
+    <%= form.label :raceBlack, style: "display: block" %>
+    <%= form.checkbox :raceBlack %>
+  </div>
+  <div>
+    <%= form.label :raceHispanic, style: "display: block" %>
+    <%= form.checkbox :raceHispanic %>
+  </div>
+  <div>
+    <%= form.label :raceHawaiian, style: "display: block" %>
+    <%= form.checkbox :raceHawaiian %>
+  </div>
+  <div>
+    <%= form.label :raceWhite, style: "display: block" %>
+    <%= form.checkbox :raceWhite %>
+  </div>
+  <div>
+    <%= form.label :raceDidNotProvide, style: "display: block" %>
+    <%= form.checkbox :raceDidNotProvide %>
+  </div>
+  <div>
+    <%= form.label :gender, style: "display: block" %>
+    <%= form.text_field :gender %>
+  </div>
+  <div>
+    <%= form.label :dateOfBirth, style: "display: block" %>
+    <%= form.datetime_field :dateOfBirth %>
+  </div>
+  <div>
+    <%= form.label :cityOfBirth, style: "display: block" %>
+    <%= form.text_field :cityOfBirth %>
+  </div>
+  <div>
+    <%= form.label :stateOfBirth, style: "display: block" %>
+    <%= form.text_field :stateOfBirth %>
+  </div>
+  <div>
+    <%= form.label :language, style: "display: block" %>
+    <%= form.text_field :language %>
+  </div>
+  <div>
+    <%= form.label :military, style: "display: block" %>
+    <%= form.text_field :military %>
+  </div>
+  <div>
+    <%= form.label :parent1EducationalLevel, style: "display: block" %>
+    <%= form.text_field :parent1EducationalLevel %>
+  </div>
+  <div>
+    <%= form.label :parent2EducationalLevel, style: "display: block" %>
+    <%= form.text_field :parent2EducationalLevel %>
+  </div>
+  <div>
+    <%= form.label :currentHouseholdIncome, style: "display: block" %>
+    <%= form.text_field :currentHouseholdIncome %>
+  </div>
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

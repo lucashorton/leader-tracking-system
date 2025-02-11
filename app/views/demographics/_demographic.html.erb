@@ -1,0 +1,71 @@
+<div id="<%= dom_id demographic %>">
+  <p>
+    <strong>Leader:</strong>
+    <%= demographic.leader_id %>
+  </p>
+  <p>
+    <strong>Raceamericanindian:</strong>
+    <%= demographic.raceAmericanIndian %>
+  </p>
+  <p>
+    <strong>Raceasian:</strong>
+    <%= demographic.raceAsian %>
+  </p>
+  <p>
+    <strong>Raceblack:</strong>
+    <%= demographic.raceBlack %>
+  </p>
+  <p>
+    <strong>Racehispanic:</strong>
+    <%= demographic.raceHispanic %>
+  </p>
+  <p>
+    <strong>Racehawaiian:</strong>
+    <%= demographic.raceHawaiian %>
+  </p>
+  <p>
+    <strong>Racewhite:</strong>
+    <%= demographic.raceWhite %>
+  </p>
+  <p>
+    <strong>Racedidnotprovide:</strong>
+    <%= demographic.raceDidNotProvide %>
+  </p>
+  <p>
+    <strong>Gender:</strong>
+    <%= demographic.gender %>
+  </p>
+  <p>
+    <strong>Dateofbirth:</strong>
+    <%= demographic.dateOfBirth %>
+  </p>
+  <p>
+    <strong>Cityofbirth:</strong>
+    <%= demographic.cityOfBirth %>
+  </p>
+  <p>
+    <strong>Stateofbirth:</strong>
+    <%= demographic.stateOfBirth %>
+  </p>
+  <p>
+    <strong>Language:</strong>
+    <%= demographic.language %>
+  </p>
+  <p>
+    <strong>Military:</strong>
+    <%= demographic.military %>
+  </p>
+  <p>
+    <strong>Parent1educationallevel:</strong>
+    <%= demographic.parent1EducationalLevel %>
+  </p>
+  <p>
+    <strong>Parent2educationallevel:</strong>
+    <%= demographic.parent2EducationalLevel %>
+  </p>
+  <p>
+    <strong>Currenthouseholdincome:</strong>
+    <%= demographic.currentHouseholdIncome %>
+  </p>
+  <%= link_to "Edit this demographic information", edit_leader_demographic_path(@leader, demographic) %>
+</div>

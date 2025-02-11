@@ -1,98 +1,75 @@
 <div id="<%= dom_id contact_information %>">
   <p>
-    <strong>Leader:</strong>
-    <%= contact_information.leader_id %>
-  </p>
-
-  <p>
     <strong>Physical street address1:</strong>
     <%= contact_information.physical_street_address1 %>
   </p>
-
   <p>
     <strong>Physical street address2:</strong>
     <%= contact_information.physical_street_address2 %>
   </p>
-
   <p>
     <strong>Physical street address3:</strong>
     <%= contact_information.physical_street_address3 %>
   </p>
-
   <p>
     <strong>Physical city:</strong>
     <%= contact_information.physical_city %>
   </p>
-
   <p>
     <strong>Physical state:</strong>
     <%= contact_information.physical_state %>
   </p>
-
   <p>
     <strong>Physical zip:</strong>
     <%= contact_information.physical_zip %>
   </p>
-
   <p>
     <strong>Physical country:</strong>
     <%= contact_information.physical_country %>
   </p>
-
   <p>
     <strong>Permanent street address1:</strong>
     <%= contact_information.permanent_street_address1 %>
   </p>
-
   <p>
     <strong>Permanent street address2:</strong>
     <%= contact_information.permanent_street_address2 %>
   </p>
-
   <p>
     <strong>Permanent street address3:</strong>
     <%= contact_information.permanent_street_address3 %>
   </p>
-
   <p>
     <strong>Permanent city:</strong>
     <%= contact_information.permanent_city %>
   </p>
-
   <p>
     <strong>Permanent state:</strong>
     <%= contact_information.permanent_state %>
   </p>
-
   <p>
     <strong>Permanent zip:</strong>
     <%= contact_information.permanent_zip %>
   </p>
-
   <p>
     <strong>Permanent country:</strong>
     <%= contact_information.permanent_country %>
   </p>
-
   <p>
     <strong>Email:</strong>
     <%= contact_information.email %>
   </p>
-
   <p>
     <strong>Phone:</strong>
     <%= contact_information.phone %>
   </p>
-
   <p>
     <strong>Phone type:</strong>
     <%= contact_information.phone_type %>
   </p>
-
   <p>
     <strong>Alternate phone:</strong>
     <%= contact_information.alternate_phone %>
   </p>
-      <%= link_to "Edit this contact information", edit_leader_contact_information_path(@leader, contact_information) %>
-
+  <%= link_to "Edit this contact information", edit_leader_contact_information_path(@leader, contact_information) %>
 </div>

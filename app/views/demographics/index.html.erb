@@ -1,0 +1,11 @@
+<p style="color: green"><%= notice %></p>
+<% content_for :title, "Demographic information" %>
+<h1>Demographic information</h1>
+<div class="columns">
+  <div class="column">
+    <%= render "application/sidebar", leader:@leader %>
+  </div>
+  <div class="column is-three-quarters">
+    <%= render @demographic %>
+  </div>
+</div>

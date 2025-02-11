@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   resources :leaders do
     resources :contact_informations
+    resources :emergency_contacts
+    resources :demographics
   end
   
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

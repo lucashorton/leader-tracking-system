@@ -1,0 +1,39 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  leader: one
+  raceAmericanIndian: false
+  raceAsian: false
+  raceBlack: false
+  raceHispanic: false
+  raceHawaiian: false
+  raceWhite: false
+  raceDidNotProvide: false
+  gender: MyString
+  dateOfBirth: 2025-02-11 15:41:50
+  cityOfBirth: MyString
+  stateOfBirth: MyString
+  language: MyString
+  military: MyString
+  parent1EducationalLevel: MyString
+  parent2EducationalLevel: MyString
+  currentHouseholdIncome: MyString
+
+two:
+  leader: two
+  raceAmericanIndian: false
+  raceAsian: false
+  raceBlack: false
+  raceHispanic: false
+  raceHawaiian: false
+  raceWhite: false
+  raceDidNotProvide: false
+  gender: MyString
+  dateOfBirth: 2025-02-11 15:41:50
+  cityOfBirth: MyString
+  stateOfBirth: MyString
+  language: MyString
+  military: MyString
+  parent1EducationalLevel: MyString
+  parent2EducationalLevel: MyString
+  currentHouseholdIncome: MyString

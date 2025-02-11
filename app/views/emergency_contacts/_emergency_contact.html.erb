@@ -1,0 +1,47 @@
+<div id="<%= dom_id emergency_contact %>">
+  <p>
+    <strong>Firstname:</strong>
+    <%= emergency_contact.firstName %>
+  </p>
+  <p>
+    <strong>Middlename:</strong>
+    <%= emergency_contact.middleName %>
+  </p>
+  <p>
+    <strong>Lastname:</strong>
+    <%= emergency_contact.lastName %>
+  </p>
+  <p>
+    <strong>Phonenumber:</strong>
+    <%= emergency_contact.phoneNumber %>
+  </p>
+  <p>
+    <strong>Streetaddress1:</strong>
+    <%= emergency_contact.streetAddress1 %>
+  </p>
+  <p>
+    <strong>Streetaddress2:</strong>
+    <%= emergency_contact.streetAddress2 %>
+  </p>
+  <p>
+    <strong>City:</strong>
+    <%= emergency_contact.city %>
+  </p>
+  <p>
+    <strong>State:</strong>
+    <%= emergency_contact.state %>
+  </p>
+  <p>
+    <strong>Zip:</strong>
+    <%= emergency_contact.zip %>
+  </p>
+  <p>
+    <strong>Country:</strong>
+    <%= emergency_contact.country %>
+  </p>
+  <p>
+    <strong>Email:</strong>
+    <%= emergency_contact.email %>
+  </p>
+  <%= link_to "Edit this emergency contact", edit_leader_emergency_contact_path(@leader, emergency_contact) %>
+</div>
